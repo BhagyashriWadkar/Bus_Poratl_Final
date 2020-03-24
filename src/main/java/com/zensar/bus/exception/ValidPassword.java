@@ -16,7 +16,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Retention(RUNTIME)
 public @interface ValidPassword {
 
-    String message() default "Invalid Password";
+    String message() default "Password must have at least one uppercase at least one lowercase and at least special character and at least 8 characters ";
     Class<?>[] groups() default {};
     Class<? extends Payload>[] payload() default {};
 
